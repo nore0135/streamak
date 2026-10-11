@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta
+      name="description"
+      content="Kairo is a public, rights-cleared library for films, serials, and study resources."
+    />
+    <title>Kairo — play, learn, keep</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="announcement-bar">
+        <div class="container announcement-inner">
+          <span class="announcement-dot" aria-hidden="true"></span>
+          <p>One calm place for your watchlist and study queue.</p>
+          <a href="#/about">How the library works <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a class="brand" href="#/" aria-label="Kairo home">
+            <span class="brand-mark" aria-hidden="true">k</span>
+            <span class="brand-copy">
+              <strong>kairo</strong>
+              <small>play · learn · keep</small>
+            </span>
+          </a>
+
+          <button
+            class="mobile-menu-button"
+            id="mobile-menu-button"
+            type="button"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span></span><span></span>
+          </button>
+
+          <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+            <a data-nav-link href="#/">Home</a>
+            <a data-nav-link href="#/explore">Explore</a>
+            <a data-nav-link href="#/watch">Watch</a>
+            <a data-nav-link href="#/learn">Learn</a>
+            <a data-nav-link href="#/about">About</a>
+          </nav>
+
+          <a class="drive-pill" id="header-drive-link" href="#/about">
+            <span class="drive-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M8.2 3h7.6l5.4 9.35-3.8 6.6H9.8L4.4 9.6 8.2 3Z" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <path d="m8.2 3 5.55 9.6M4.4 9.6h10.95m2.05 9.35 2.8-6.6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" />
+              </svg>
+            </span>
+            <span id="header-drive-label">Connect Drive</span>
+          </a>
+        </div>
+      </header>
+
+      <main id="app-main" tabindex="-1"></main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a class="brand footer-brand" href="#/" aria-label="Kairo home">
+              <span class="brand-mark" aria-hidden="true">k</span>
+              <span class="brand-copy">
+                <strong>kairo</strong>
+                <small>play · learn · keep</small>
+              </span>
+            </a>
+            <p class="footer-note">A lightweight public library for authorised media and useful study material.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <p class="footer-heading">Browse</p>
+              <a href="#/explore">All library</a>
+              <a href="#/watch">Watch</a>
+              <a href="#/learn">Learn</a>
+            </div>
+            <div>
+              <p class="footer-heading">Keep it safe</p>
+              <a href="#/about">Drive setup</a>
+              <a href="#/about#rights">Rights notice</a>
+              <a href="#/about#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="container footer-bottom">
+          <span>© <span id="current-year"></span> Kairo</span>
+          <span>Built for GitHub Pages · no account required</span>
+        </div>
+      </footer>
+    </div>
+
+    <noscript>
+      <div class="noscript-message">
+        Kairo needs JavaScript for page switching, search, and the saved list. Please enable JavaScript to use the library.
+      </div>
+    </noscript>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
